@@ -19,12 +19,12 @@ public class SearchCarsSteps {
 	
 	@Given("I am on the Homepage of {string}")
 	public void i_am_on_the_homepage_of(String URL) {
-		
+		SeleniumDriver.setUpDriver();
 		SeleniumDriver.openPage(URL);
 	}
 
 	@When("I move to the menu")
-	public void i_move_to_the_menu(List<String> list) {
+	public void i_move_to_the_menu(List<String> list) throws InterruptedException {
 		// Write code here that turns the phrase above into concrete actions
 		// For automatic transformation, change DataTable to one of
 		// E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or

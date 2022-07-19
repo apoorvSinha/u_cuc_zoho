@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class CarsGuideHomePageLocators {
-	@FindBy(how = How.XPATH, using = "//*[@id=\"u_H\"]/div/div[1]/ul/li[1]/a")
+	@FindBy(how = How.XPATH, using = "//*[@id=\\\"u_H\\\"]/div/div[1]/ul/li[1]/a")
 	public WebElement buy_sell_link;
 	@FindBy(how = How.LINK_TEXT, using = "reviews")
 	public WebElement car_reviews_link;

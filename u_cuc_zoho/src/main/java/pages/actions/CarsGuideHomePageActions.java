@@ -15,8 +15,9 @@ public class CarsGuideHomePageActions {
 		PageFactory.initElements(SeleniumDriver.getDriver(), carsGuideHomePageLocators);
 		
 	}
-	public void moveToBuy_Sell() {
+	public void moveToBuy_Sell() throws InterruptedException {
 		Actions actions = new Actions(SeleniumDriver.getDriver());
+		Thread.sleep(3000);
 		actions.moveToElement(carsGuideHomePageLocators.buy_sell_link).perform();
 		
 	}
